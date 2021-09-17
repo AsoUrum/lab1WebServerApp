@@ -24,26 +24,56 @@ namespace Lab1_ASP.NetConnectedMode.BILL
 
         // class public methods
 
-       public void saveEmployee(Employee emp)
+       public void SaveEmployee(Employee emp)
        {
             EmployeeDB.SaveRecord(emp);
        }
 
-       public void updateEmployee(int empId, Employee emp)
+       public void UpdateEmployee(Employee emp)
        {
-            EmployeeDB.updateRecord(empId, emp);
+            EmployeeDB.updateRecord(emp);
        }
 
-       public void updateEmployee(int empId)
+       public void DeleteEmployee(int empId)
        {
             EmployeeDB.DeleteRecord(empId);
        }
 
-        public List<Employee> listEmployees()
+        public List<Employee> ListEmployees()
         {
             return EmployeeDB.listAllRecord();       
         }
-        
+
+        public Employee SearchEmployee(int id)
+        {
+
+            return EmployeeDB.SearchRecord(id);
+        }
+
+        public bool DuplicateId(int Id)
+        {
+            return EmployeeDB.IsDuplicateId(Id);
+        }
+
+        public List<Employee> SearchFirstName(string FirstName)
+        {
+
+            return EmployeeDB.SearchFirstName(FirstName);
+
+
+        }
+
+        public List<Employee> SearchLastName(string LastName)
+        {
+
+            return EmployeeDB.SearchLastName(LastName);
+
+
+        }
+        public  List<Employee> SearchJobTitile(string title)
+        {
+            return EmployeeDB.SearchJobTitile(title);
+        }
 
     }
 }

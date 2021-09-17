@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GUI\WebFormEmployee.aspx" />
     <Content Include="GUI\WebFormTest.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -75,6 +76,13 @@
     <Compile Include="BILL\Employee.cs" />
     <Compile Include="DAL\EmployeeDB.cs" />
     <Compile Include="DAL\UtilityDB.cs" />
+    <Compile Include="GUI\WebFormEmployee.aspx.cs">
+      <DependentUpon>WebFormEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\WebFormEmployee.aspx.designer.cs">
+      <DependentUpon>WebFormEmployee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\WebFormTest.aspx.cs">
       <DependentUpon>WebFormTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -83,6 +91,7 @@
       <DependentUpon>WebFormTest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VALIDATION\Validator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -93,9 +102,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="VALIDATION\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

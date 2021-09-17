@@ -11,7 +11,7 @@ namespace Lab1_ASP.NetConnectedMode.GUI
 {
 
 
-    public partial class WebFormTest
+    public partial class WebFormEmployee
     {
 
         /// <summary>
@@ -24,22 +24,31 @@ namespace Lab1_ASP.NetConnectedMode.GUI
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblEmployeeId control.
+        /// LblTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmployeeId;
+        protected global::System.Web.UI.WebControls.Label LblTitle;
 
         /// <summary>
-        /// tbEmployeeId control.
+        /// lblEmployeeID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbEmployeeId;
+        protected global::System.Web.UI.WebControls.Label lblEmployeeID;
+
+        /// <summary>
+        /// txtEmployeeId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmployeeId;
 
         /// <summary>
         /// btnSave control.
@@ -60,22 +69,13 @@ namespace Lab1_ASP.NetConnectedMode.GUI
         protected global::System.Web.UI.WebControls.Label lblFirstName;
 
         /// <summary>
-        /// tbFirstName control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbFirstName;
-
-        /// <summary>
-        /// lblLastName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLastName;
+        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
 
         /// <summary>
         /// btnUpdate control.
@@ -87,6 +87,24 @@ namespace Lab1_ASP.NetConnectedMode.GUI
         protected global::System.Web.UI.WebControls.Button btnUpdate;
 
         /// <summary>
+        /// lblLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblLastName;
+
+        /// <summary>
+        /// txtLastName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtLastName;
+
+        /// <summary>
         /// btnDelete control.
         /// </summary>
         /// <remarks>
@@ -94,15 +112,6 @@ namespace Lab1_ASP.NetConnectedMode.GUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnDelete;
-
-        /// <summary>
-        /// tbLastName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbLastName;
 
         /// <summary>
         /// lblJobTitle control.
@@ -114,22 +123,49 @@ namespace Lab1_ASP.NetConnectedMode.GUI
         protected global::System.Web.UI.WebControls.Label lblJobTitle;
 
         /// <summary>
-        /// tbJobTitle control.
+        /// txtJobTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbJobTitle;
+        protected global::System.Web.UI.WebControls.TextBox txtJobTitle;
 
         /// <summary>
-        /// Button1 control.
+        /// btnListAll control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnListAll;
+
+        /// <summary>
+        /// lblSearchby control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSearchby;
+
+        /// <summary>
+        /// dpdListSeearchBy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dpdListSeearchBy;
+
+        /// <summary>
+        /// txtSearchBy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSearchBy;
 
         /// <summary>
         /// btnSearch control.
@@ -141,21 +177,21 @@ namespace Lab1_ASP.NetConnectedMode.GUI
         protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// GridViewEmployee control.
+        /// lblEmployeeListTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewEmployee;
+        protected global::System.Web.UI.WebControls.Label lblEmployeeListTitle;
 
         /// <summary>
-        /// btnListAll control.
+        /// gviewListAllEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnListAll;
+        protected global::System.Web.UI.WebControls.GridView gviewListAllEmployee;
     }
 }
